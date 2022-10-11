@@ -9,6 +9,19 @@ public class SwiftSimpleShareNativePlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    result("iOS " + UIDevice.current.systemVersion)
+     if call.method == "shareMessage" {
+           let arguments = call.arguments as! [String: Any]
+           let message = arguments["message"] as! String
+           shareMessage(message)
+           result(nil)
+         } else {
+           result(FlutterMethodNotImplemented)
+         }
   }
+
+    private func shareMessage(_ message: String) {
+       let controller = UIActivityViewController(activityItems:[message], applicationActivities: nil)
+       let viewController = UIApplication.shared.keyWindow!.rootViewController
+       viewController?.present(controller,animated: true)
+     }
 }
