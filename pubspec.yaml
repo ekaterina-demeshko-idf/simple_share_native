@@ -1,6 +1,6 @@
 name: simple_share_native
 description: Simple share text plugin
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/ekaterina-demeshko-idf/simple_share_native
 
 environment:

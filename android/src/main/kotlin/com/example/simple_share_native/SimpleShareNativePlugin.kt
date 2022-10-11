@@ -23,7 +23,7 @@ class SimpleShareNativePlugin : FlutterPlugin, MethodCallHandler {
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
         if (call.method == "shareMessage") {
-            var message = call.argument("message")
+            var message = call.argument("message") as String?
             shareMessage(message)
             result.success(null)
         } else {
