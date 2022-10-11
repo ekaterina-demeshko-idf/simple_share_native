@@ -1,7 +1,7 @@
 name: simple_share_native
-description: A new Flutter plugin project.
+description: Simple share text plugin
 version: 0.0.1
-homepage:
+homepage: https://github.com/ekaterina-demeshko-idf/simple_share_native
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
