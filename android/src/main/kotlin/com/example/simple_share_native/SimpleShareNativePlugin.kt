@@ -42,7 +42,7 @@ class SimpleShareNativePlugin : FlutterPlugin, MethodCallHandler {
             putExtra(Intent.EXTRA_TEXT, message)
             type = "text/plain"
         }
-        val sharingIntent = Intent.createChooser(sendIntent, "Movie Sharing")
+        val sharingIntent = Intent.createChooser(sendIntent, "Share Message")
         sharingIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_MULTIPLE_TASK
         context?.startActivity(sharingIntent)
     }
