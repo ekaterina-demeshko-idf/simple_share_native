@@ -1,6 +1,6 @@
 name: simple_share_native
-description: Simple share text plugin
-version: 0.0.2
+description: Simple share text plugin. It can share any text message and it's available on Android, iOS, and macOS.
+version: 0.1.2
 homepage: https://github.com/ekaterina-demeshko-idf/simple_share_native
 
 environment:

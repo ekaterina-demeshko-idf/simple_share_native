@@ -22,8 +22,8 @@ public class SimpleShareNativePlugin: NSObject, FlutterPlugin {
     private func shareMessage(_ message: String) {
         let picker = NSSharingServicePicker(items: [message])
         if let view = NSApplication.shared.keyWindow?.contentViewController?.view {
-            let rect = NSRect(x: view.bounds.midX, y: view.bounds.midY, width: 100, height: 100)
-            picker.show(relativeTo: rect, of: view, preferredEdge: .minY)
+            let rect = NSRect(x: view.bounds.maxX - 120, y: view.bounds.maxY - 20, width: 0, height: 0)
+            picker.show(relativeTo: rect, of: view, preferredEdge: .maxX)
         }
     }
 }
