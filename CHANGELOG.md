@@ -1,3 +1,5 @@
+## 0.1.3
+fix share menu position
 ## 0.1.2
 fix homepage
 ## 0.1.1
